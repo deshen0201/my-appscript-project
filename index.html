@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <style>
+    // 你的 CSS 代码
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sender">
+      <h2>Sender:</h2>
+      <h3>GoogleHackathon@gmail.com</h3>
+      <div class="form-container">
+        <form id="inputEmail">
+          <label for="recipient">Recipient:</label>
+          <input type="text" id="recipient" name="recipient" value="CodeError@gmail.com" readonly class="readonly">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+          <label for="viewType">Email Type:</label>
+          <select id="viewType" name="viewType">
+            <option value="regular">Regular</option>
+            <option value="once-view">Once-View</option>
+          </select>
+          <input type="button" value="Send" onclick="submitForm()">
+        </form>
+      </div>
+    </div>
+    <div class="receiver">
+      <h2>Receiver:</h2>
+      <h3>CodeError@gmail.com</h3>
+      <div id="emailList"></div>
+    </div>
+  </div>
+  <script>
+    // 你的 JavaScript 代码
+  </script>
+</body>
+</html>
